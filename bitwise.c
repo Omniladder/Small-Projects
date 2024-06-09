@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include <stdint.h>
 
+
+
 uint64_t bitClear()
 {
 	uint64_t bitNumber = 0;
@@ -46,4 +48,8 @@ uint64_t bitSet(uint64_t bitNumber, int oneZero, int index)
 int bitCheck(uint64_t bitNumber, int index)
 {return (((1 << index) & bitNumber) > 0);}
 
+uint64_t bitNot(uint64_t bitNumber)
+{
+	return ~(bitNumber);
+}
 
