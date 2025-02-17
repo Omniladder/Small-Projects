@@ -14,10 +14,10 @@ int main()
 {
     //Loads in Image data
     int width, height, channels;
-    unsigned char *img = stbi_load("reagan.jpg", &width, &height, &channels, 0);
+    unsigned char *img = stbi_load("mcdonalds.png", &width, &height, &channels, 0);
     
 
-    unsigned char *asciiImage = convertToAscii(img, height, width, channels, 1);
+    unsigned char *asciiImage = convertToAscii(img, height, width, channels, 0);
 
     //printf("%s\n", asciiImage);
 

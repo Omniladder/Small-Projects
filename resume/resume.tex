@@ -1,0 +1,242 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\styledSection}[1]{
+  \section{\textnormal{\textbf{#1}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubDetailheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{-2pt} 
+      \textbf{#1} & #2 \\
+      \textit{\scriptsize\textcolor{gray}{#3}} & \textit{\small#4}\\
+     \textit{\small #5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumePlainTextSubheading}[1]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.97\textwidth}@{}}
+      #1 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.3in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
+
+% ADDED COMMANDS %
+
+\newcommand{\resumeProjectHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeProjectHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeSimpleListStart}{\begin{itemize}[leftmargin=0.15in, label={\tiny$\bullet$}]}
+\newcommand{\resumeSimpleListEnd}{\end{itemize}}
+
+\newcommand{\resumeBasicListStart}{\begin{itemize}[leftmargin=0in, label={}]\item\begin{itemize}[leftmargin=0.3in]}
+\newcommand{\resumeBasicListEnd}{\end{itemize}\end{itemize}}
+
+%-------------------------------------------
+%%%%%% RESUME STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+ \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Dustin O'Brien}} \\ \href{mailto:dustintobrien@gmail.com}{\faEnvelopeO\ \underline{dustintobrien@gmail.com}} & \href{https://www.linkedin.com/in/dustin-o-brien-7174a4267/}{\faLinkedin\ \underline{www.linkedin.com/in/dustin-o-brien/}} \\
+   \faMobile\ (240) 678-3366 &
+   \href{https://github.com/Omniladder}{\faGithub\ \underline{github.com/Omniladder}} \\
+   \href{https://www.dustintobrien.com}{\faGlobe\ \underline{www.dustintobrien.com}} \\
+ \end{tabular*}
+
+%-----------ABOUT---------------
+
+% \section{Objective}
+% \styledSection{\textbf{Objective}}
+
+% \vspace{2pt}
+% \small{
+% Highly motivated computer science senior with a strong foundation in software engineering and a passion for solving complex problems. Seeking a challenging entry-level position to apply my technical skills, learn from experienced professionals, and contribute to the development of robust and innovative software solutions. Committed to continuous learning and eager to make a positive impact in a dynamic and collaborative environment.
+% }
+% \vspace{-5pt}
+
+%-----------------COURSES----------------%
+
+    %-----------EDUCATION-----------
+    \styledSection{\textbf{Education}}
+    \resumeSubHeadingListStart
+      \resumeSubDetailheading
+        {Salisbury University}{Aug. 2021 -- May 2025}
+        {GPA: 3.59/4.0}{Salisbury, MD}
+        {B.S. in Computer Science \& Data Science, Minor in Math}{Tracks: Software Engineering \& AI/Algorithms}
+        
+        
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\styledSection{\textbf{Experience}}
+  \resumeSubHeadingListStart
+
+    
+
+      \resumeSubheading
+        {Artificial Intelligence Researcher}{June 2024 -- September 2024}
+        {Salisbury University $|$ Python, Langchain, FAISS, Pandas }{Salisbury, MD}
+        \resumeItemListStart
+        \resumeItem{Developed a set of LLM based applications in a collaborative environment of professors and student researchers to build LLM based chatbots and documents to explain client wants}
+        \resumeItem{Helped orchestrate and wrote papers and presentations for MIT and Salisbury's undergrad research conferences}
+        \resumeItemListEnd
+
+        \resumeSubheading
+      {System Adminstration Intern}{May 2024 -- August 2024}
+      {Salisbury University $|$ Linux, Windows, Python, Pytorch, Anaconda}{Salisbury, MD}
+      \resumeItemListStart
+        \resumeItem{Worked under Salisbury's Department Chair and System Adminstrator on the creation of 4 new computer labs totaling a setup of 44 new individual computers}
+        \resumeItem{Created benchmarks for Salisbury \& UMBC High Performance Computer labs on ability to train new Large Language Models for development of experimental new courses}
+      \resumeItemListEnd
+
+        \resumeSubheading
+        {Math \& Comp. Sci Tutor}{January 2024 -- Present}
+        {Salisbury University $|$ C/C++, Java, Python, R, Valgrind}{Salisbury, MD}
+        \resumeItemListStart
+        \resumeItem{Tutored and explained complex Mathematical \& Computer Science topics such as Calculus, Systems Software, Discrete Maths, Data Visualization, and more with up to 35\% increase in exam scores}
+        \resumeItem{Debugged student codebases handling errors, logical problems, and memory leaks in a fast timely manner}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\styledSection{\textbf{Projects}}
+    \resumeProjectHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Celite} $|$ \emph{JavaScript, HTML/CSS, JQuery}}{January 2024 -- December 2024}
+          \resumeItemListStart
+            \resumeItem{Worked in a Agile/Scrum development cycle to develope a set of efficient Celluar Automaton simulators}
+            \resumeItem{Generated visually appealing and accurate imagery to be used for new mathematical textbooks, undergraduate research, and allow for more interactive teaching of the subject}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{Portfolio Website} $|$ \emph{React, AWS (EC2), MUI, JavaScript, Nginx}}{September 2024 -- January 2025}
+          \resumeItemListStart
+            \resumeItem{Created multi-page React website and components from scratch with visually distinctive styling}
+            \resumeItem{Built custom personal AWS EC2 server to handle hosting site along with other personal projects, websites, and APIs for external display \& usage}
+          \resumeItemListEnd
+
+    \resumeProjectHeadingListEnd
+    
+%-----------TECHNICAL SKILLS-----------
+\styledSection{\textbf{Technical Skills}}
+    \resumeBasicListStart
+        \resumeItem{\textbf{Languages}: Python, Java, C/C++, Javascript, HTML/CSS, R}
+        \resumeItem{\textbf{Tools}: React, LangChain, Next.JS, Sk-Learn, Pytorch, Jinja, OpenGL}
+        \resumeItem{\textbf{Softwares}: Linux, VSCode, Vim, AWS (EC2), Nginx, Git/Github}
+    \resumeBasicListEnd
+
+%-----------HACKATHONS-----------
+\styledSection{\textbf{Hackathons}}
+    \resumeBasicListStart
+        \resumeItem{HenHacks 2024: Won Best Bank of America's Best Financial hack with a Haskell Vulnerability Detector}
+        \resumeItem{HackUMBC 2024: Won 2nd place overall and best educational software with TestifAI, an AI-powered test generator}
+        \resumeItem{HoyaHacks 2025: Created a professional looking AI based Resume platform using Next.JS, Python, and LangChain}
+    \resumeBasicListEnd
+
+\end{document}
